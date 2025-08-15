@@ -9,12 +9,11 @@ const Login = () => {
         <div className = "flex items-center justify-center min-h-screen bg-gray-100">
             <div className ="w-full max-w-sm p-6 bg-white rounded-2xl shadow-lg" >
                 <h2 className = "mb-6 text-2xl font-bold text-center">
-                    Login Page
+                    Login Page..
                 </h2>
 
                 <form className = "space-y-4">
-                    
-                    <div>{/* Username input */}
+                    <div>
                         <label className = "block mb-2 text-sm font-medium text-gray-700">
                             Username:
                         </label>
@@ -28,7 +27,7 @@ const Login = () => {
                         />
                     </div>
 
-                    <div> {/* Password input */}
+                    <div>
                         <label className = "block mb-2 text-sm font-medium text-gray-700">
                             Password:
                         </label>
@@ -43,19 +42,13 @@ const Login = () => {
                         />
                     </div>
 
-                    <div> {/* Submit button */}
+                    <div>
                         <button
                             type = "submit"
                             className="w-full px-4 py-2 font-semibold text-white bg-sky-500 rounded-lg hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
                         >
                             Login
                         </button>
-                    </div>
-
-                    <div> {/* Optional: Add a link to register if the user doesn't have an account */}
-                        <p className = "text-sm text-gray-600 text-center">
-                            Don't have an account? <a href="/register" className="text-blue-500 hover:underline">Register here</a>
-                        </p>
                     </div>
 
                 </form>

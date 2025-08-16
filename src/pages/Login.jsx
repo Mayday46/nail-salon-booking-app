@@ -45,7 +45,7 @@ const Login = () => {
 
                     <div className = "flex items-center justify-between">
                         <div className = "flex items-center">
-                            <input 
+                            <input
                                 type = "checkbox"
                                 checked = {rememberMe}
                                 onChange = {(e) => setRememberMe(e.target.checked)}
@@ -62,7 +62,7 @@ const Login = () => {
                     <div>
                         <button
                             type = "submit"
-                            className="w-full px-4 py-2 font-semibold text-white bg-sky-500 rounded-lg hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            className = "w-full px-4 py-2 font-semibold text-white bg-sky-500 rounded-lg hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
                         >
                             Login
                         </button>

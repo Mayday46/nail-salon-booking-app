@@ -4,6 +4,7 @@ import '../styles/login.css'; // We'll put styles here
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [rememberMe, setRememberMe] = useState(false);
 
     return (
         <div className = "flex items-center justify-center min-h-screen bg-gray-100">
@@ -41,6 +42,22 @@ const Login = () => {
                             required
                         />
                     </div>
+
+                    <div className = "flex items-center justify-between">
+                        <div className = "flex items-center">
+                            <input 
+                                type = "checkbox"
+                                checked = {rememberMe}
+                                onChange = {(e) => setRememberMe(e.target.checked)}
+                                className = "mr-2 h-4 w-4" // Added spacing + consistent
+                            />
+                            <label className = "text-sm"> Remember me </label>
+                        </div>
+                        <a href = "/forgot-Password" className = "text-sm text-blue-500 hover:underline">
+                                Forgot Password?
+                            </a>
+                    </div>
+
 
                     <div>
                         <button
